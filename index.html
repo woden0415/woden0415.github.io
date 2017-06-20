@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="bookmark" href="http://image.wufazhuce.com/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/x-icon" href="http://image.wufazhuce.com/favicon.ico">
-    <title>ONE</title>
-    <link rel="stylesheet" type="text/css" href="/dist/styles.css">
-  </head>
-  <body>
-    <div id="app">
-      <!--<router-view></router-view>-->
-    </div>
-    <script src="/dist/build.js"></script>
-  </body>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <script src="./pdfobject.min.js"></script>
+  <style>
+    .pdfobject-container { height: 500px;}
+    .pdfobject { border: 1px solid #666; }
+  </style>
+</head>
+<body>
+  <div id="example1"></div>
+</body>
+  <script>
+    // PDFObject.embed("./sample-3pp.pdf", "#example1");
+    PDFObject.embed("myfile.pdf");
+  </script>
 </html>
