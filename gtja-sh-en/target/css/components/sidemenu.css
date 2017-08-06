@@ -1,0 +1,45 @@
+.navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 354px;
+}
+.navigation .bar {
+  padding: 10px 35px 10px 28px;
+  background-color: #fff;
+}
+.bar li a {
+  display: block;
+  font-size: 16px;
+  color: #666;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e2e2e2;
+  padding-left: 2px;
+  -webkit-transition: background-color 0.5s, border-color 0.5s, color 0 0.5s;
+  -moz-transition: background-color 0.5s, border-color 0.5s, color 0 0.5s;
+  transition: background-color 0.5s, border-color 0.5s, color 0 0.5s;
+}
+.bar li.endbar a {
+  border-bottom: none;
+}
+.bar li a.hover,
+.bar li a:hover {
+  color: #004e98;
+  text-decoration: none;
+}
+.bar li a span {
+  font-size: 16px;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  transition: color 0.25s;
+  float: left;
+}
+.bar li a span + span {
+  float: right;
+  font-family: serif;
+}
+.bar li a.hover span:last-child,
+.bar li a:hover span:last-child {
+  color: #004e98;
+}

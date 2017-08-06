@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+ @@include('components/head.html', {
+  "title": "Contact Us"
+})
+<link rel="stylesheet" href="../vendor/swiper.min.css">
+<script src="../vendor/swiper.jquery.min.js"></script>
+<script src="../vendor/layer/layer.js"></script>
+
+<link rel="stylesheet" href="./css/childpage.css">
+<script src="./js/components/banner.js"></script>
+<script src="./js/components/contact.js"></script>
+
+<body class="bodyBg">
+  @@include('components/header.html')
+  @@include('components/banner.html')
+  <div class="gtja-section child-part">
+    <div class="section-content">
+      <div class="qyjr-content">
+        <div class="content">
+          <h2 class="p-title">Message Board</h2>
+          <div class="advance child-content info-con">
+            <!-- 子页面左侧内容 -->
+          </div>
+        </div>
+        @@include('components/sidemenu.html')
+      </div>
+
+    </div>
+  </div>
+
+  @@include('components/contact.html')
+  @@include('components/footer.html')
+</body>
+</html>

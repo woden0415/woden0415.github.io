@@ -1,0 +1,49 @@
+/* 定义图片路径，此路径默认html文件在target下 */
+/* 单行显示 */
+/* 多行显示 */
+/* 圆角 */
+.services {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.services .section-content {
+  background-color: #fff;
+}
+.services .service-item {
+  position: relative;
+  padding-left: 152px;
+  padding-top: 19px;
+  height: 142px;
+}
+.services .item-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 140px;
+  height: 140px;
+  background: url("../../assets/images/icons/item-img-bg1.png");
+}
+.services .item-img:hover {
+  background: url("../../assets/images/icons/item-img-bg2.png");
+}
+.services .item-img img {
+  margin-top: 30%;
+  margin-left: 35%;
+}
+.services .item-text {
+  padding-left: 10px;
+  padding: 0 20px 0 10px;
+}
+.services .title {
+  padding: 0;
+  margin: 0 0 26px 0;
+}
+.services .desc {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

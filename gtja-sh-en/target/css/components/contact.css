@@ -1,0 +1,116 @@
+/*子页面右侧联系我们*/
+/* 单行显示 */
+/* 多行显示 */
+/* 圆角 */
+.layui-layer-title {
+  font-size: 24px;
+  background-color: #004e98;
+  color: #fff;
+}
+.formtab {
+  padding: 0 30px 20px;
+}
+.formtab h3 {
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-weight: normal;
+}
+.formtab .note-title {
+  border-top: 1px dashed #004e89;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-top: 7px;
+}
+.formtab .item {
+  margin-bottom: 15px;
+  line-height: 28px;
+  overflow: hidden;
+}
+.formtab .item span {
+  display: block;
+  float: left;
+}
+.formtab .item span.left {
+  width: 91px;
+  font-size: 14px;
+  text-align: left;
+}
+.formtab .item span.left i {
+  font-style: normal;
+  color: #e30000;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.formtab .item span.inputxt input {
+  height: 24px;
+  line-height: 24px;
+  width: 230px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  color: #444;
+}
+.formtab .item span.inputxt input:focus {
+  border-color: #004e98;
+}
+.formtab .item span.select {
+  width: 320px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #fff;
+  position: relative;
+}
+.formtab .item span.select i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.formtab textarea {
+  line-height: 24px;
+  width: 230px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  color: #444;
+  height: auto;
+}
+.formfoot {
+  text-align: center;
+}
+.formfoot input {
+  width: 154px;
+  height: 30px;
+  background-color: #004e98;
+  font-size: 15px;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.gtja-sider {
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  z-index: 2;
+}
+.gtja-sider .contact-btn {
+  width: 90px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #004e89;
+  padding: 13px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.gtja-sider .contact-btn a.kf {
+  color: #fff;
+}
+.gtja-sider .contact-btn i.gtja-iconfont {
+  font-size: 40px;
+}

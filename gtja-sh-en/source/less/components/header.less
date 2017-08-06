@@ -1,0 +1,205 @@
+@import "./variables.less";
+.gtja-section .section-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.gtja-section.menu {
+  height: 80px;
+  background-color: #fff;
+  /*融资融券菜单*/
+}
+.gtja-section.menu a.logo {
+  display: inline-block;
+  width: 275.86px;
+  height: 80px;
+  background: url("@{icons-url}/top-logo.png") no-repeat, none;
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+.gtja-section.menu .menubar {
+  height: 80px;
+  position: relative;
+  z-index: 2;
+  >ul {
+    float: right;
+  }
+}
+.gtja-section.menu .menubar li {
+  float: left;
+  padding: 28px 27px 31px 27px;
+}
+.gtja-section.menu .menubar li a.column {
+  display: block;
+  font-size: 16px;
+}
+.gtja-section.menu .menubar li a.column:hover {
+  text-decoration: none;
+  color: #004e98;
+}
+.gtja-section.menu .menubar li .menubox {
+  position: absolute;
+  top: 80px;
+  z-index: 4;
+  color: #fff;
+  background: url("@{image-url}/menu-bg.png");
+  display: none;
+}
+.gtja-section.menu .menubar li .menubox dd h2 {
+  text-align: left;
+  font-size: 16px;
+  padding: 0 15px 0 10px;
+  padding: 5px 10px 5px 10px;
+}
+.gtja-section.menu .menubar li .menubox dd a {
+  color: #fff;
+  font-weight: normal;
+}
+.gtja-section.menu .menubar li .menubox dd strong.f-22 {
+  font-size: 22px;
+}
+.gtja-section.menu .menubar li .menubox dd .com-box {
+  border: solid 1px #fff;
+  border-width: 1px 0;
+  margin-bottom: 10px;
+}
+.gtja-section.menu .menubar li .menubox dd .com-box i.td {
+  font-style: normal;
+  width: 23%;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 3px;
+}
+.gtja-section.menu .menubar li .menubox dd.line {
+  padding-left: 20px;
+  width: 90%;
+  height: auto;
+  border-left: 1px dotted #4e7faf;
+}
+.gtja-section.menu .menubar li .menubox dd a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.gtja-section.menu .menubar li.cur a.column {
+  color: #004e98;
+}
+.gtja-section.menu .menubar li:hover div.menubox {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+}
+.gtja-section.menu .menu-frm {
+  margin-top: 30px;
+  height: 50px;
+}
+.gtja-section.menu .menu-frm li {
+  float: left;
+  height: 54px;
+  position: relative;
+  z-index: 4;
+}
+.gtja-section.menu .menu-frm li a {
+  display: block;
+  color: #444;
+  font-size: 16px;
+  padding: 0 18px;
+  margin: 0 8px;
+  height: 46px;
+  border-bottom: 4px solid #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.25s, border-color 0.3s;
+  -moz-transition: color 0.25s, border-color 0.3s;
+  transition: color 0.25s, border-color 0.3s;
+}
+.gtja-section.menu .menu-frm li a:hover,
+.gtja-section.menu .menu-frm li a.hover {
+  color: #004e98;
+  border-color: #004e98;
+}
+.gtja-section.menu .menu-frm li div.menu-list {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  padding: 10px 0;
+  z-index: 60;
+  display: none;
+  -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.gtja-section.menu .menu-frm li div.menu-list .shadow {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.gtja-section.menu .menu-frm li div.menu-list dl dd {
+  min-width: 140px;
+}
+.gtja-section.menu .menu-frm li div.menu-list dl dd a {
+  padding: 0 10px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  font-size: 14px;
+  color: #666;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.gtja-section.menu .menu-frm li div.menu-list dl dd a:hover {
+  color: #004e98;
+}
+.gtja-section.menu .menu-frm li:hover .menu-list {
+  display: block;
+}
+.gtja-section.menu li.g-pr {
+  padding: 0;
+  float: right;
+}
+.gtja-section.menu li.g-pr div {
+  position: relative;
+  top: 25px;
+  padding: 0 5px;
+  width: 166px;
+  height: 28px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #e2e2e2;
+}
+.gtja-section.menu li.g-pr div.hover {
+  border: 1px solid #004e98;
+}
+.gtja-section.menu li.g-pr div.hover button {
+  color: #004e98;
+}
+.gtja-section.menu li.g-pr button {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: 22;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e2e2e2;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+.gtja-section.menu li.g-pr div input,
+.gtja-section.menu li.g-pr button:hover,
+.gtja-section.menu li.g-pr button:focus,
+.gtja-section.menu li.g-pr button:active,
+.gtja-section.menu li.g-pr button:visited {
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+}

@@ -1,0 +1,43 @@
+@import "./variables.less";
+@import "./minxin.less";
+.services {
+  height: 150px;
+  margin-bottom: 20px;
+  .section-content {
+    background-color: #fff;
+  }
+  .service-item {
+    position: relative;
+    padding-left: 152px;
+    padding-top: 19px;
+    height: 142px;
+  }
+  .item-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 140px;
+    height: 140px;
+    background: url("@{icons-url}/item-img-bg1.png");
+    &:hover {
+      background:url("@{icons-url}/item-img-bg2.png");
+    }
+    img {
+      margin-top: 30%;
+      margin-left: 35%;
+    }
+  }
+  .item-text {
+    padding-left: 10px;
+    padding: 0 20px 0 10px;
+  }
+  .title {
+    padding: 0;
+    margin: 0 0 26px 0;
+  }
+  .desc {
+    padding: 0;
+    margin: 0;
+    .line-clamp(3);
+  }
+}
