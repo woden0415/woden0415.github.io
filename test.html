@@ -1,39 +1,43 @@
-<!DOCTYPE html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<title>骑行路线规划</title>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=bwg6uIF8RFLAoEHUWnbh0FX0"></script>
-<style type="text/css">
-body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
-</style>
-</head>
-<body>
-<div id="container"></div>
-<script type="text/javascript">
-var map = new BMap.Map("container");
-var point = new BMap.Point(116.331398,39.897445);
-map.centerAndZoom(point,12);
-
-var geolocation = new BMap.Geolocation();
-geolocation.getCurrentPosition(function(r){
-    if(this.getStatus() == BMAP_STATUS_SUCCESS){
-        var mk = new BMap.Marker(r.point);
-        map.addOverlay(mk);
-        map.panTo(r.point);
-        alert('您的位置：'+r.point.lng+','+r.point.lat);
-    }
-    else {
-        alert('failed'+this.getStatus());
-    }        
-});
-  function myFun(result){
-    var cityName = result.name;
-    map.setCenter(cityName);
-    alert("当前定位城市:"+cityName);
-}
-var myCity = new BMap.LocalCity();
-myCity.get(myFun); 
-</script>
-</body>
-</html>
+<!DOCTYPE html>  
+<html>  
+<head>  
+   <meta charset="utf-8">  
+   <meta name="apple-mobile-web-app-capable" content="yes">  
+   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
+  <meta name="viewport" content="width=device-width">  
+  <title>JS Bin</title>  
+</head>  
+<body>  
+    <button onclick="openApp()">点击</button>  
+</body>  
+<script>  
+    function openApp(){  
+        var ua = window.navigator.userAgent.toLowerCase();  
+        var config = {  
+            scheme_IOS: 'baidumap://map/direction?origin=中关村&destination=五道口&mode=driving&region=北京',                  //ios appURI路径  
+            scheme_Android: 'bdapp://map/line?coordtype=&zoom=&region=上海&name=28&src=webapp.line.yourCompanyName.yourAppName',          //android appURI路径  
+            download_url: 'https://www.baidu.com/',
+            timeout: 600      
+        };  
+        function openClient(){  
+            var startTime = Date.now();  
+            console.log(startTime);  
+            var ifr = document.createElement('iframe');  
+            ifr.src = ua.indexOf('os') > 0 ? config.scheme_IOS : config.scheme_Android;  
+            ifr.style.display = 'none';  
+            document.body.appendChild(ifr);  
+            var t = setTimeout(function() {  
+                var endTime = Date.now();  
+                console.log(endTime);  
+                if (!startTime || endTime - startTime < config.timeout + 200) {   
+                    window.location.href = config.download_url;  
+                } else {}  
+            }, config.timeout);  
+            window.onblur = function() {  
+                clearTimeout(t);  
+            }  
+        }  
+        openClient();  
+    }  
+</script>  
+</html>  
